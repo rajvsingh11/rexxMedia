@@ -15,7 +15,7 @@ export default function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-             <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">About Us</div>
+             <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">About Us</div>
             <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
               We Don't Just Manage Accounts — We Launch Trends
             </h2>
@@ -43,20 +43,20 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <Image
-              src="https://placehold.co/600x700.png"
+              src="https://placehold.co/600x600.png"
               alt="Our team collaborating"
               data-ai-hint="marketing team meeting"
               width={600}
-              height={700}
-              className="rounded-xl shadow-lg object-cover"
+              height={600}
+              className="rounded-xl shadow-lg object-cover w-full h-auto"
             />
           </div>
         </div>
 
         <div className="mt-24 text-center">
-           <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Meet the Team</div>
+           <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Meet the Team</div>
           <h3 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             The Minds Behind the Magic
           </h3>
