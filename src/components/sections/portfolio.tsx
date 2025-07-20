@@ -18,56 +18,56 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    category: "Web Design",
+    title: "OTT Show Launch – Amazon MiniTV",
+    category: "OTT Launch",
     image: "https://placehold.co/600x400.png",
-    hint: "ecommerce website",
-    description: "A complete redesign of a major online retailer's website to improve user experience and conversion rates.",
-    tags: ["UI/UX", "React", "Next.js"],
+    hint: "tv show poster",
+    description: "Executed a 30-day content calendar with influencer collaborations and targeted ads.",
+    tags: ["2.1M Reach", "180K Engagement", "0.49 CPC"],
   },
   {
-    title: "Corporate Branding",
-    category: "Branding",
+    title: "Influencer Brand Growth",
+    category: "Influencer Marketing",
     image: "https://placehold.co/600x400.png",
-    hint: "corporate identity",
-    description: "Developed a new brand identity for a financial services company, including logo, color palette, and typography.",
-    tags: ["Logo Design", "Strategy"],
+    hint: "lifestyle influencer",
+    description: "Grew a lifestyle creator from 40K to 75K followers, securing 5 paid collaborations in 6 weeks.",
+    tags: ["Follower Growth", "Brand Collabs"],
   },
   {
-    title: "SaaS Dashboard",
-    category: "Web Design",
+    title: "D2C Brand Launch",
+    category: "D2C Launch",
     image: "https://placehold.co/600x400.png",
-    hint: "dashboard ui",
-    description: "Designed and developed a complex data visualization dashboard for a SaaS product.",
-    tags: ["Data Viz", "Figma", "Vue.js"],
+    hint: "skincare product",
+    description: "Launched a new skincare startup, achieving a 3.8x Return On Ad Spend (ROAS).",
+    tags: ["3.8x ROAS", "1K Followers"],
   },
   {
-    title: "Mobile App Launch",
-    category: "Marketing",
+    title: "Reel Hooks That Stop the Scroll",
+    category: "Content Strategy",
     image: "https://placehold.co/600x400.png",
-    hint: "mobile app",
-    description: "Created a comprehensive digital marketing campaign for the launch of a new fitness app.",
-    tags: ["Social Media", "PPC"],
+    hint: "social media feed",
+    description: "Creative sample for a carousel post detailing 5 effective hooks for short-form video content.",
+    tags: ["Carousel", "Content Creation"],
   },
   {
-    title: "Startup Website",
-    category: "Web Design",
+    title: "How to Build Launch Hype",
+    category: "Content Strategy",
     image: "https://placehold.co/600x400.png",
-    hint: "startup website",
-    description: "Built a fast and scalable website for a tech startup from scratch.",
-    tags: ["Webflow", "CMS"],
+    hint: "youtube thumbnail",
+    description: "Concept for a YouTube thumbnail designed to maximize clicks for a video on launch marketing.",
+    tags: ["YouTube", "Thumbnails"],
   },
   {
-    title: "Logo System",
-    category: "Branding",
+    title: "BTS Storytelling Reel",
+    category: "Content Strategy",
     image: "https://placehold.co/600x400.png",
-    hint: "brand guidelines",
-    description: "Designed a flexible logo system for a media company with multiple sub-brands.",
-    tags: ["Branding", "Illustration"],
+    hint: "behind the scenes",
+    description: "A behind-the-scenes reel format using a compelling voiceover to tell a brand's story.",
+    tags: ["Reels", "Storytelling"],
   },
 ];
 
-const categories = ["All", "Web Design", "Branding", "Marketing"];
+const categories = ["All", "OTT Launch", "Influencer Marketing", "D2C Launch", "Content Strategy"];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -81,12 +81,12 @@ export default function Portfolio() {
     <section id="portfolio" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Our Work</div>
+          <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Case Studies & Samples</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
-            Showcasing Our Expertise
+            Showcasing Our Results
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We take pride in our work. Here are some of our recent projects that demonstrate our skills and dedication.
+            We take pride in our work. Here are some of our case study highlights and creative samples.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function Portfolio() {
                         {project.tags.map(tag => <Badge key={tag} variant="outline">{tag}</Badge>)}
                       </div>
                       <Link href="#" className="text-sm font-semibold text-primary inline-flex items-center group/link">
-                        View Case Study <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                        View Details <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                       </Link>
                     </CardContent>
                   </Card>

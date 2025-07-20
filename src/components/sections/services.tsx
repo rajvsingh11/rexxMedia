@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenTool, Code, Megaphone, Search, BarChart, Users } from "lucide-react";
+import { Users, Film, Star, DollarSign, Search, Video } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Service = {
@@ -10,34 +10,34 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: PenTool,
-    title: "UI/UX Design",
-    description: "Crafting intuitive and beautiful user interfaces that provide a seamless user experience.",
+    icon: Users,
+    title: "Social Media Management",
+    description: "We don’t just manage accounts — we build communities and launch trends that drive engagement.",
   },
   {
-    icon: Code,
-    title: "Web Development",
-    description: "Building responsive, high-performance websites and web applications with modern technologies.",
+    icon: Film,
+    title: "Content Creation",
+    description: "Creating high-impact Reels, Carousels, and Shorts that capture attention and tell your story.",
   },
   {
-    icon: Megaphone,
-    title: "Digital Marketing",
-    description: "Executing data-driven marketing strategies to increase your online visibility and reach.",
+    icon: Star,
+    title: "Influencer Campaigns",
+    description: "Connecting your brand with the right influencers to create authentic, high-performing campaigns.",
+  },
+  {
+    icon: DollarSign,
+    title: "Paid Advertising",
+    description: "Data-driven ad campaigns on Meta, Google, and YouTube to maximize your reach and ROI.",
   },
   {
     icon: Search,
-    title: "SEO Optimization",
-    description: "Improving your website's ranking on search engines to attract organic traffic.",
+    title: "SEO & YouTube Optimization",
+    description: "Boosting your visibility on search engines and YouTube to attract organic, high-intent audiences.",
   },
   {
-    icon: BarChart,
-    title: "Brand Strategy",
-    description: "Developing a strong brand identity that resonates with your target audience.",
-  },
-  {
-    icon: Users,
-    title: "Content Creation",
-    description: "Creating compelling content that engages your audience and tells your brand's story.",
+    icon: Video,
+    title: "Video & Content Seeding",
+    description: "High-ROI awareness tools, including viral seeding across WhatsApp, Telegram, and meme pages.",
   },
 ];
 
@@ -46,12 +46,12 @@ export default function Services() {
     <section id="services" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Our Services</div>
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Our Core Services</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
-            What We Do
+            What We Do Best
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            From design to development and marketing, we offer a complete suite of services to help your business succeed online.
+            From influencer campaigns to full-scale OTT launches, Rexx Media combines storytelling with strategy to drive measurable results.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

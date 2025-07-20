@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PortfoliAI",
-  description: "Creative Agency & Portfolio",
+  title: "Rexx Media",
+  description: "Digital Marketing & Launch Strategy",
 };
 
 export default function RootLayout({

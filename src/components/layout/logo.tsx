@@ -7,7 +7,7 @@ const Logo = ({ className }: { className?: string }) => (
       className
     )}
   >
-    Portfoli<span className="text-primary">AI</span>
+    Rexx<span className="text-primary">Media</span>
   </div>
 );
 export default Logo;

@@ -1,28 +1,28 @@
 import Image from "next/image";
-import { Award, Users, Heart, Zap, ShieldCheck, CheckCircle } from 'lucide-react';
+import { TrendingUp, UserCheck, Zap, Handshake } from 'lucide-react';
 import { Button } from "../ui/button";
 import Link from "next/link";
 
 const reasons = [
   {
-    icon: Award,
-    title: "Expert Team",
-    description: "Our team consists of industry veterans with a passion for excellence and innovation.",
+    icon: TrendingUp,
+    title: "Strategy-First Execution",
+    description: "We don't just post content; we build strategies that create trends and drive measurable results.",
   },
   {
-    icon: Heart,
-    title: "Client-Focused",
-    description: "We prioritize your needs and goals, ensuring a collaborative and transparent process.",
+    icon: UserCheck,
+    title: "Youth & Creator Focused",
+    description: "Deep expertise in the OTT, creator, and youth-centric brand space. We know your audience.",
   },
   {
     icon: Zap,
-    title: "Proven Results",
-    description: "We have a track record of delivering successful projects that drive growth and ROI.",
+    title: "Affordable Campaigns",
+    description: "Our campaign pricing starts from just 15K/month, making top-tier marketing accessible.",
   },
   {
-    icon: ShieldCheck,
-    title: "Quality Assured",
-    description: "Rigorous testing and quality checks are part of our process to deliver flawless products.",
+    icon: Handshake,
+    title: "End-to-End Service",
+    description: "From content and ads to influencer management and reporting, we handle it all for you.",
   }
 ];
 
@@ -34,15 +34,15 @@ export default function WhyUs() {
             <div className="relative">
                  <Image
                     src="https://placehold.co/600x700.png"
-                    alt="Why choose us"
-                    data-ai-hint="business meeting"
+                    alt="Why choose Rexx Media"
+                    data-ai-hint="marketing strategy session"
                     width={600}
                     height={700}
                     className="rounded-xl shadow-lg object-cover"
                 />
             </div>
             <div className="space-y-6">
-                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Why Choose Us</div>
+                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Why Work With Us</div>
                 <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
                     Your Partner in Digital Growth
                 </h2>

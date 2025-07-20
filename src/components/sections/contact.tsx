@@ -59,10 +59,10 @@ export default function Contact() {
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Contact Us</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
-            Let's Build Something Amazing Together
+            Let's Launch Your Next Big Thing
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Have a project in mind or just want to say hello? We'd love to hear from you.
+            Have a project in mind or just want to say hello? We'd love to hear from you. Let's do it the Rexx way.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Subject</FormLabel>
                       <FormControl>
-                        <Input placeholder="Project Inquiry" {...field} />
+                        <Input placeholder="Launch Strategy Inquiry" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -131,19 +131,15 @@ export default function Contact() {
           </div>
           <div className="space-y-8">
             <div>
-              <h3 className="font-headline text-2xl font-semibold mb-4">Our Office</h3>
+              <h3 className="font-headline text-2xl font-semibold mb-4">Get In Touch</h3>
               <div className="space-y-3 text-muted-foreground">
-                  <p className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <span>123 Creative Avenue, Suite 100<br/>New York, NY 10001, USA</span>
-                  </p>
                   <p className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary" />
-                    <span>+1 (234) 567-890</span>
+                    <span>+91 95616 96441 (Phone/WhatsApp)</span>
                   </p>
                   <p className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span>hello@portfoliai.com</span>
+                    <span>himanshupandeycr7@gmail.com</span>
                   </p>
               </div>
             </div>
@@ -151,7 +147,7 @@ export default function Contact() {
                 <Image
                     src="https://placehold.co/600x450.png"
                     alt="Map to our office"
-                    data-ai-hint="city map"
+                    data-ai-hint="digital marketing agency"
                     width={600}
                     height={450}
                     className="object-cover w-full h-full"

@@ -17,29 +17,29 @@ export default function About() {
           <div className="space-y-6">
              <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">About Us</div>
             <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
-              Crafting Digital Excellence
+              We Don't Just Manage Accounts — We Launch Trends
             </h2>
             <p className="text-muted-foreground text-lg">
-              PortfoliAI was founded with a simple mission: to merge creativity with technology to build digital products that are not only beautiful but also solve real-world problems and drive business growth.
+              Rexx Media specializes in Digital Marketing & Launch Strategy for OTT Platforms, Influencers, and Modern Brands. We combine storytelling with strategy to drive measurable results.
             </p>
             <p className="text-muted-foreground">
-              Our journey started in a small garage and has grown into a full-fledged creative powerhouse. We believe in collaboration, transparency, and a partnership approach with our clients.
+             From influencer campaigns to full-scale OTT launches, our team has the expertise to make your next big thing a massive success.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center pt-4">
               <div className="p-4 rounded-lg bg-background">
                 <Target className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Mission</h4>
-                <p className="text-sm text-muted-foreground">To innovate and inspire.</p>
+                <p className="text-sm text-muted-foreground">To launch trends.</p>
               </div>
               <div className="p-4 rounded-lg bg-background">
                 <Award className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Vision</h4>
-                <p className="text-sm text-muted-foreground">To be a global leader.</p>
+                <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
               </div>
                <div className="p-4 rounded-lg bg-background">
                 <Users className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Team</h4>
-                <p className="text-sm text-muted-foreground">Creative & passionate.</p>
+                <p className="text-sm text-muted-foreground">Strategic & creative.</p>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function About() {
             <Image
               src="https://placehold.co/600x700.png"
               alt="Our team collaborating"
-              data-ai-hint="team collaboration"
+              data-ai-hint="marketing team meeting"
               width={600}
               height={700}
               className="rounded-xl shadow-lg object-cover"

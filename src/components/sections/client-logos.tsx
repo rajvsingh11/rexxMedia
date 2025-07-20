@@ -1,14 +1,13 @@
 import Image from "next/image";
 
 const logos = [
-  { name: "Client A", src: "https://placehold.co/150x60.png", hint: "tech logo" },
-  { name: "Client B", src: "https://placehold.co/150x60.png", hint: "startup logo" },
-  { name: "Client C", src: "https://placehold.co/150x60.png", hint: "finance logo" },
-  { name: "Client D", src: "https://placehold.co/150x60.png", hint: "saas logo" },
-  { name: "Client E", src: "https://placehold.co/150x60.png", hint: "ecommerce logo" },
-  { name: "Client F", src: "https://placehold.co/150x60.png", hint: "media logo" },
-  { name: "Client G", src: "https://placehold.co/150x60.png", hint: "health logo" },
-  { name: "Client H", src: "https://placehold.co/150x60.png", hint: "education logo" },
+  { name: "Amazon Prime Video India", src: "https://placehold.co/150x60.png", hint: "streaming service logo" },
+  { name: "Amazon MiniTV", src: "https://placehold.co/150x60.png", hint: "tv logo" },
+  { name: "Jhankar Beats", src: "https://placehold.co/150x60.png", hint: "music logo" },
+  { name: "1xBet", src: "https://placehold.co/150x60.png", hint: "gaming logo" },
+  { name: "Play Win", src: "https://placehold.co/150x60.png", hint: "betting logo" },
+  { name: "MG Motors", src: "https://placehold.co/150x60.png", hint: "car logo" },
+  { name: "IPLWin", src: "https://placehold.co/150x60.png", hint: "sports logo" },
 ];
 
 const allLogos = [...logos, ...logos]; // Duplicate for seamless scroll
@@ -18,7 +17,7 @@ export default function ClientLogos() {
     <section className="py-12 bg-card/50">
       <div className="container mx-auto px-4 md:px-6">
         <h3 className="text-center text-sm font-semibold text-muted-foreground tracking-wider uppercase mb-8">
-          Trusted by the world's best companies
+          Trusted by leading OTT, music, automotive, and gaming brands
         </h3>
         <div
           className="relative w-full overflow-hidden"
