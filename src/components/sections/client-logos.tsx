@@ -14,7 +14,7 @@ const allLogos = [...logos, ...logos]; // Duplicate for seamless scroll
 
 export default function ClientLogos() {
   return (
-    <section className="py-20 bg-card/50">
+    <section className="py-20 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <h3 className="text-center text-sm font-semibold text-muted-foreground tracking-wider uppercase mb-12">
           Trusted by leading OTT, music, automotive, and gaming brands

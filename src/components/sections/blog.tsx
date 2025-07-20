@@ -33,7 +33,7 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="bg-background">
+    <section id="blog" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Blog & Insights</div>
@@ -46,7 +46,7 @@ export default function Blog() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <Card key={post.title} className="group flex flex-col overflow-hidden">
+            <Card key={post.title} className="group flex flex-col overflow-hidden bg-background">
                 <div className="relative overflow-hidden">
                     <Link href="#">
                         <Image

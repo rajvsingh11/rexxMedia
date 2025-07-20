@@ -43,7 +43,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-background">
+    <section id="services" className="bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Our Core Services</div>
@@ -56,7 +56,7 @@ export default function Services() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50">
+            <Card key={service.title} className="group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 bg-background">
               <CardHeader className="flex flex-row items-center gap-4">
                 <div className="bg-primary/10 p-3 rounded-lg text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
                   <service.icon className="h-8 w-8" />
