@@ -14,9 +14,9 @@ const allLogos = [...logos, ...logos]; // Duplicate for seamless scroll
 
 export default function ClientLogos() {
   return (
-    <section className="py-12 bg-card/50">
+    <section className="py-20 bg-card/50">
       <div className="container mx-auto px-4 md:px-6">
-        <h3 className="text-center text-sm font-semibold text-muted-foreground tracking-wider uppercase mb-8">
+        <h3 className="text-center text-sm font-semibold text-muted-foreground tracking-wider uppercase mb-12">
           Trusted by leading OTT, music, automotive, and gaming brands
         </h3>
         <div
@@ -29,14 +29,14 @@ export default function ClientLogos() {
             {allLogos.map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-48 h-16 flex items-center justify-center mx-4"
+                className="flex-shrink-0 w-64 h-24 flex items-center justify-center mx-6"
               >
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   data-ai-hint={logo.hint}
-                  width={140}
-                  height={50}
+                  width={180}
+                  height={70}
                   className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
                 />
               </div>
