@@ -8,7 +8,7 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 
 export default function Hero() {
   const [line1, isLine1Typing] = useTypewriter("We Launch Trends,", 0);
-  const [line2, isLine2Typing] = useTypewriter("not just Campaigns.", isLine1Typing ? 100000 : 500);
+  const [line2, isLine2Typing] = useTypewriter("Not just Campaigns.", isLine1Typing ? 100000 : 500);
 
   return (
     <section id="home" className="relative h-[90vh] min-h-[600px] max-h-[800px] w-full overflow-hidden">
