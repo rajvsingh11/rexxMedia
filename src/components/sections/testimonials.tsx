@@ -33,10 +33,10 @@ const QuoteIcon = () => (
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-card">
+    <section id="testimonials" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-           <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Testimonials</div>
+           <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Testimonials</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             What Our Clients Say
           </h2>
@@ -46,7 +46,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between">
+            <Card key={testimonial.name} className="flex flex-col justify-between bg-card">
               <CardContent className="p-6 relative">
                  <QuoteIcon />
                 <p className="text-muted-foreground mb-6 text-balance pt-4">"{testimonial.quote}"</p>
