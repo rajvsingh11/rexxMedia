@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    company: "Tech Solutions Inc.",
+    name: "Aarav Sharma",
+    company: "Producer, Lotus Entertainment",
     avatar: "https://placehold.co/100x100.png",
-    hint: "woman professional",
-    quote: "PortfoliAI transformed our online presence. Their team is professional, creative, and incredibly efficient. The results exceeded all our expectations.",
+    hint: "man professional",
+    quote: "The team at Rexx Media is phenomenal. Their viral marketing campaign for our show 'Gutur Gu' delivered results beyond our wildest expectations. Their understanding of the youth audience is unmatched in India.",
   },
   {
-    name: "Mark Chen",
-    company: "Innovate Co.",
+    name: "Priya Singh",
+    company: "Founder, Aura Beauty",
     avatar: "https://placehold.co/100x100.png",
-    hint: "man smiling",
-    quote: "Working with PortfoliAI was a fantastic experience. They truly understood our vision and delivered a product that was both beautiful and functional.",
+    hint: "woman founder",
+    quote: "As a D2C startup, our launch was critical. Rexx Media handled everything from influencer outreach to paid ads flawlessly. We hit our 3-month sales target in the first 3 weeks. Incredible!",
   },
   {
-    name: "Jessica Rodriguez",
-    company: "Creative Goods",
+    name: "Rohan Kapoor",
+    company: "Content Creator",
     avatar: "https://placehold.co/100x100.png",
-    hint: "woman portrait",
-    quote: "The best creative agency we've worked with. Their attention to detail and commitment to quality is unparalleled. Highly recommended!",
+    hint: "man influencer",
+    quote: "Working with Rexx scaled my brand in ways I couldn't do alone. They secured major brand collaborations and grew my follower base significantly. They truly are partners in growth.",
   },
 ];
 
