@@ -12,8 +12,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const projects = [
@@ -50,24 +48,64 @@ const projects = [
     tags: ["Carousel", "Content Creation"],
   },
   {
-    title: "How to Build Launch Hype",
-    category: "Content Strategy",
+    title: "Physics Wallah",
+    category: "Viral Marketing",
     image: "https://placehold.co/600x400.png",
-    hint: "youtube thumbnail",
-    description: "Concept for a YouTube thumbnail designed to maximize clicks for a video on launch marketing.",
-    tags: ["YouTube", "Thumbnails"],
+    hint: "education technology",
+    description: "We unleashed 150M+ views for Physics Wallah, tapping into our Viral Reach Marketing network to make their message unstoppable.",
+    tags: ["150M+ Views", "Viral Reach Marketing"],
   },
   {
-    title: "BTS Storytelling Reel",
-    category: "Content Strategy",
+    title: "Gutur Gu",
+    category: "Viral Marketing",
     image: "https://placehold.co/600x400.png",
-    hint: "behind the scenes",
-    description: "A behind-the-scenes reel format using a compelling voiceover to tell a brand's story.",
-    tags: ["Reels", "Storytelling"],
+    hint: "movie poster",
+    description: "Gutur Gu reached 220M+ views worldwide with our Viral Reach Marketing, breaking barriers with razor-sharp promotion.",
+    tags: ["220M+ Views", "Viral Reach Marketing"],
+  },
+  {
+    title: "Half CA",
+    category: "Brand Marketing",
+    image: "https://placehold.co/600x400.png",
+    hint: "web series",
+    description: "We turned Half CA into a 150M+ view phenomenon with Brand Marketing Asset Development, building a fan-driven empire.",
+    tags: ["150M+ Views", "Brand Marketing"],
+  },
+  {
+    title: "Lucky Guy",
+    category: "Brand Marketing",
+    image: "https://placehold.co/600x400.png",
+    hint: "show poster",
+    description: "Lucky Guy accelerated to 120M+ views with our Brand Marketing Asset Development, igniting growth through targeted ecosystems.",
+    tags: ["120M+ Views", "Brand Marketing"],
+  },
+  {
+    title: "Yeh Meri Family",
+    category: "Social Media",
+    image: "https://placehold.co/600x400.png",
+    hint: "family show",
+    description: "Our 360° Social Media Transformation delivered 1.2B+ views for Yeh Meri Family, dominating platforms with precision strategies.",
+    tags: ["1.2B+ Views", "360° Social Media"],
+  },
+  {
+    title: "Highway Love",
+    category: "Social Media",
+    image: "https://placehold.co/600x400.png",
+    hint: "romance series",
+    description: "Highway Love soared to 200M+ views with our 360° Social Media Transformation, covering every angle for total impact.",
+    tags: ["200M+ Views", "360° Social Media"],
+  },
+  {
+    title: "Badtameez Dil",
+    category: "Viral Marketing",
+    image: "https://placehold.co/600x400.png",
+    hint: "heart illustration",
+    description: "Badtameez Dil hit 170M+ views with our Viral Content Production Studio, crafting a story that resonated and spread like wildfire.",
+    tags: ["170M+ Views", "Viral Content"],
   },
 ];
 
-const categories = ["All", "OTT Launch", "Influencer Marketing", "D2C Launch", "Content Strategy"];
+const categories = ["All", "OTT Launch", "Influencer Marketing", "D2C Launch", "Viral Marketing", "Brand Marketing", "Social Media", "Content Strategy"];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -106,7 +144,7 @@ export default function Portfolio() {
         <Carousel
           opts={{
             align: "start",
-            loop: true,
+            loop: filteredProjects.length > 3,
           }}
           className="w-full"
         >
@@ -130,12 +168,9 @@ export default function Portfolio() {
                     <CardContent className="p-6 flex-grow flex flex-col">
                       <h3 className="font-headline text-xl font-semibold mb-2">{project.title}</h3>
                       <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
-                      <div className="flex flex-wrap gap-2 mb-4">
+                      <div className="flex flex-wrap gap-2">
                         {project.tags.map(tag => <Badge key={tag} variant="outline">{tag}</Badge>)}
                       </div>
-                      <Link href="#" className="text-sm font-semibold text-primary inline-flex items-center group/link">
-                        View Details <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
                     </CardContent>
                   </Card>
                 </div>
