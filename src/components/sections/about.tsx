@@ -3,7 +3,7 @@ import { Award, Target, Users } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="bg-card">
+    <section id="about" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -18,12 +18,12 @@ export default function About() {
              From influencer campaigns to full-scale OTT launches, our team has the expertise to make your next big thing a massive success.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center pt-4">
-              <div className="p-4 rounded-lg bg-background">
+              <div className="p-4 rounded-lg bg-card">
                 <Target className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Mission</h4>
                 <p className="text-sm text-muted-foreground">To launch trends.</p>
               </div>
-              <div className="p-4 rounded-lg bg-background">
+              <div className="p-4 rounded-lg bg-card">
                 <Award className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Vision</h4>
                 <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
