@@ -20,7 +20,7 @@ const projects = [
     category: "OTT Launch",
     image: "https://placehold.co/600x400.png",
     hint: "tv show poster",
-    description: "Executed a 30-day content calendar with influencer collaborations and targeted ads.",
+    description: "Executed a 30-day content calendar with influencer collaborations and targeted ads, resulting in massive audience engagement.",
     tags: ["2.1M Reach", "180K Engagement", "0.49 CPC"],
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     category: "Influencer Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "lifestyle influencer",
-    description: "Grew a lifestyle creator from 40K to 75K followers, securing 5 paid collaborations in 6 weeks.",
+    description: "Scaled a lifestyle creator from 40K to 75K followers, securing 5 paid collaborations in just 6 weeks through strategic content.",
     tags: ["Follower Growth", "Brand Collabs"],
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     category: "D2C Launch",
     image: "https://placehold.co/600x400.png",
     hint: "skincare product",
-    description: "Launched a new skincare startup, achieving a 3.8x Return On Ad Spend (ROAS).",
+    description: "Successfully launched a new skincare startup, achieving an impressive 3.8x Return On Ad Spend (ROAS) out of the gate.",
     tags: ["3.8x ROAS", "1K Followers"],
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     category: "Content Strategy",
     image: "https://placehold.co/600x400.png",
     hint: "social media feed",
-    description: "Creative sample for a carousel post detailing 5 effective hooks for short-form video content.",
+    description: "A creative sample for a carousel post detailing 5 highly effective hooks designed for viral short-form video content.",
     tags: ["Carousel", "Content Creation"],
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     category: "Viral Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "education technology",
-    description: "We unleashed 150M+ views for Physics Wallah, tapping into our Viral Reach Marketing network to make their message unstoppable.",
+    description: "Generated an explosive 150M+ views by activating our Viral Reach Marketing network, making their message a phenomenon.",
     tags: ["150M+ Views", "Viral Reach Marketing"],
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     category: "Viral Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "movie poster",
-    description: "Gutur Gu reached 220M+ views worldwide with our Viral Reach Marketing, breaking barriers with razor-sharp promotion.",
+    description: "Shattered expectations with 220M+ global views through razor-sharp promotion and our unparalleled Viral Reach Marketing.",
     tags: ["220M+ Views", "Viral Reach Marketing"],
   },
   {
@@ -68,7 +68,7 @@ const projects = [
     category: "Brand Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "web series",
-    description: "We turned Half CA into a 150M+ view phenomenon with Brand Marketing Asset Development, building a fan-driven empire.",
+    description: "Transformed Half CA into a 150M+ view sensation by developing brand assets that built a dedicated, fan-driven empire.",
     tags: ["150M+ Views", "Brand Marketing"],
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     category: "Brand Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "show poster",
-    description: "Lucky Guy accelerated to 120M+ views with our Brand Marketing Asset Development, igniting growth through targeted ecosystems.",
+    description: "Catapulted Lucky Guy to 120M+ views by igniting growth through targeted brand ecosystems and strategic asset development.",
     tags: ["120M+ Views", "Brand Marketing"],
   },
   {
@@ -84,7 +84,7 @@ const projects = [
     category: "Social Media",
     image: "https://placehold.co/600x400.png",
     hint: "family show",
-    description: "Our 360° Social Media Transformation delivered 1.2B+ views for Yeh Meri Family, dominating platforms with precision strategies.",
+    description: "Dominated social platforms with a 360° transformation, delivering an incredible 1.2B+ views through precision strategies.",
     tags: ["1.2B+ Views", "360° Social Media"],
   },
   {
@@ -92,7 +92,7 @@ const projects = [
     category: "Social Media",
     image: "https://placehold.co/600x400.png",
     hint: "romance series",
-    description: "Highway Love soared to 200M+ views with our 360° Social Media Transformation, covering every angle for total impact.",
+    description: "Achieved a staggering 200M+ views by executing a 360° social media campaign that covered every angle for total impact.",
     tags: ["200M+ Views", "360° Social Media"],
   },
   {
@@ -100,7 +100,7 @@ const projects = [
     category: "Viral Marketing",
     image: "https://placehold.co/600x400.png",
     hint: "heart illustration",
-    description: "Badtameez Dil hit 170M+ views with our Viral Content Production Studio, crafting a story that resonated and spread like wildfire.",
+    description: "Crafted a narrative that spread like wildfire, hitting 170M+ views with our in-house Viral Content Production Studio.",
     tags: ["170M+ Views", "Viral Content"],
   },
 ];
