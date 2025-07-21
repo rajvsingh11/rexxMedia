@@ -17,7 +17,7 @@ export default function About() {
             <p className="text-muted-foreground">
              From influencer campaigns to full-scale OTT launches, our team has the expertise to make your next big thing a massive success.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center pt-4">
               <div className="p-4 rounded-lg bg-background">
                 <Target className="h-8 w-8 mx-auto text-primary mb-2"/>
                 <h4 className="font-semibold">Our Mission</h4>
@@ -28,21 +28,16 @@ export default function About() {
                 <h4 className="font-semibold">Our Vision</h4>
                 <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
               </div>
-               <div className="p-4 rounded-lg bg-background">
-                <Users className="h-8 w-8 mx-auto text-primary mb-2"/>
-                <h4 className="font-semibold">Our Team</h4>
-                <p className="text-sm text-muted-foreground">Strategic & creative.</p>
-              </div>
             </div>
           </div>
           <div className="w-full">
             <Image
-              src="https://placehold.co/600x600.png"
+              src="https://placehold.co/600x500.png"
               alt="Our team collaborating"
               data-ai-hint="marketing team meeting"
               width={600}
-              height={600}
-              className="rounded-xl shadow-lg object-cover w-full h-auto"
+              height={500}
+              className="rounded-xl shadow-lg object-cover w-full h-auto max-h-[500px]"
             />
           </div>
         </div>
