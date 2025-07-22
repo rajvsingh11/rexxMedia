@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -7,6 +8,7 @@ const testimonials = [
     company: "Producer, Lotus Entertainment",
     avatar: "https://placehold.co/100x100.png",
     hint: "man professional",
+    rating: 5,
     quote: "The team at Rexx Media is phenomenal. Their viral marketing campaign for our show 'Gutur Gu' delivered results beyond our wildest expectations. Their understanding of the youth audience is unmatched in India.",
   },
   {
@@ -14,6 +16,7 @@ const testimonials = [
     company: "Founder, Aura Beauty",
     avatar: "https://placehold.co/100x100.png",
     hint: "woman founder",
+    rating: 5,
     quote: "As a D2C startup, our launch was critical. Rexx Media handled everything from influencer outreach to paid ads flawlessly. We hit our 3-month sales target in the first 3 weeks. Incredible!",
   },
   {
@@ -21,6 +24,7 @@ const testimonials = [
     company: "Content Creator",
     avatar: "https://placehold.co/100x100.png",
     hint: "man influencer",
+    rating: 4,
     quote: "Working with Rexx scaled my brand in ways I couldn't do alone. They secured major brand collaborations and grew my follower base significantly. They truly are partners in growth.",
   },
 ];
@@ -46,11 +50,21 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between bg-card">
-              <CardContent className="p-6 relative">
+            <Card key={testimonial.name} className="flex flex-col justify-between bg-card bg-primary/5 border-primary/20">
+              <CardContent className="p-6 relative flex flex-col h-full">
                  <QuoteIcon />
-                <p className="text-muted-foreground mb-6 text-balance pt-4">"{testimonial.quote}"</p>
-                <div className="flex items-center gap-4">
+                 <div className="flex mb-4">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                        key={i}
+                        className={`h-5 w-5 ${
+                            i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground/50'
+                        }`}
+                        />
+                    ))}
+                </div>
+                <p className="text-muted-foreground mb-6 text-balance flex-grow">"{testimonial.quote}"</p>
+                <div className="flex items-center gap-4 mt-auto">
                   <Avatar>
                     <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint={testimonial.hint}/>
                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
