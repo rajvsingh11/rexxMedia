@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between bg-primary text-primary-foreground">
+            <Card key={testimonial.name} className="flex flex-col justify-between bg-primary text-primary-foreground transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <CardContent className="p-6 relative flex flex-col h-full">
                  <QuoteIcon />
                  <div className="flex mb-4">
