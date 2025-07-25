@@ -10,8 +10,8 @@
     --card-foreground: 44 43% 91%; /* parchment */
     --popover: 44 43% 91%; /* parchment */
     --popover-foreground: 224 71% 16%; /* penn_blue */
-    --primary: 265 100% 67%; /* medium_slate_blue */
-    --primary-foreground: 240 100% 99%;
+    --primary: 224 71% 16%; /* penn_blue */
+    --primary-foreground: 44 43% 91%; /* parchment */
     --secondary: 213 6% 70%; /* french_gray */
     --secondary-foreground: 224 71% 16%; /* penn_blue */
     --muted: 213 6% 85%;
@@ -32,8 +32,8 @@
     --card-foreground: 44 43% 91%;
     --popover: 224 71% 10%;
     --popover-foreground: 44 43% 91%;
-    --primary: 265 100% 67%;
-    --primary-foreground: 240 100% 99%;
+    --primary: 44 43% 91%;
+    --primary-foreground: 224 71% 10%;
     --secondary: 213 6% 70%;
     --secondary-foreground: 44 43% 91%;
     --muted: 224 71% 16%;
