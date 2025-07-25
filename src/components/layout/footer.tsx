@@ -66,7 +66,7 @@ export default function Footer() {
             {socialLinks.map((social, index) => (
               <Button key={index} variant="ghost" size="icon" asChild>
                 <Link href={social.href} target="_blank">
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-5 w-5 text-primary" />
                   <span className="sr-only">{social.icon.displayName}</span>
                 </Link>
               </Button>

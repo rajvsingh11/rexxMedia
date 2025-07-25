@@ -53,7 +53,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Button asChild variant={isScrolled ? "outline" : "default"} className={cn(isScrolled && "border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary")}>
+          <Button asChild variant={isScrolled ? "outline" : "default"} className={cn(isScrolled && "border-primary text-primary hover:bg-primary hover:text-primary-foreground")}>
             <Link href="#contact">Get a Quote</Link>
           </Button>
         </nav>

@@ -169,7 +169,7 @@ export default function Portfolio() {
                       <h3 className="font-headline text-xl font-semibold mb-2">{project.title}</h3>
                       <p className="text-card-foreground/80 text-sm mb-4 flex-grow">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.map(tag => <Badge key={tag} variant="outline">{tag}</Badge>)}
+                        {project.tags.map(tag => <Badge key={tag} variant="default">{tag}</Badge>)}
                       </div>
                     </CardContent>
                   </Card>
