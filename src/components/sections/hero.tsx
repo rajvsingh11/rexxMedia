@@ -8,7 +8,7 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [line1, isLine1Typing] = useTypewriter("W e Launch Trends,", 0);
+  const [line1, isLine1Typing] = useTypewriter("We Launch Trends,", 0);
   const [startLine2, setStartLine2] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Hero() {
     }
   }, [isLine1Typing]);
 
-  const [line2, isLine2Typing] = useTypewriter("N ot just Campaigns.", startLine2 ? 0 : 1000000);
+  const [line2, isLine2Typing] = useTypewriter("Not just Campaigns.", startLine2 ? 0 : 1000000);
 
 
   return (

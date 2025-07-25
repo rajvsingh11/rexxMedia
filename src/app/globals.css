@@ -4,47 +4,64 @@
 
 @layer base {
   :root {
-    --background: 34 50% 90%; /* parchment */
-    --foreground: 224 71% 16%; /* penn_blue */
-    --card: 224 71% 16%; /* penn_blue */
-    --card-foreground: 34 50% 90%; /* parchment */
-    --popover: 34 50% 90%; /* parchment */
-    --popover-foreground: 224 71% 16%; /* penn_blue */
-    --primary: 224 71% 16%; /* penn_blue */
-    --primary-foreground: 34 50% 90%; /* parchment */
-    --secondary: 213 6% 70%; /* french_gray */
-    --secondary-foreground: 224 71% 16%; /* penn_blue */
-    --muted: 213 6% 85%;
-    --muted-foreground: 224 71% 25%;
-    --accent: 265 100% 67%; /* medium_slate_blue */
-    --accent-foreground: 224 71% 16%;
+    --background: 43 58% 89%; /* parchment */
+    --foreground: 222 70% 16%; /* penn_blue */
+
+    --card: 222 70% 16%; /* penn_blue */
+    --card-foreground: 43 58% 89%; /* parchment */
+
+    --popover: 43 58% 89%; /* parchment */
+    --popover-foreground: 222 70% 16%; /* penn_blue */
+
+    --primary: 259 100% 67%; /* medium_slate_blue */
+    --primary-foreground: 43 58% 89%; /* parchment */
+
+    --secondary: 216 8% 72%; /* french_gray */
+    --secondary-foreground: 222 70% 16%; /* penn_blue */
+
+    --muted: 216 8% 85%; /* french_gray */
+    --muted-foreground: 222 70% 25%; /* penn_blue */
+
+    --accent: 259 100% 67%; /* medium_slate_blue */
+    --accent-foreground: 43 58% 89%; /* parchment */
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 213 6% 80%; /* french_gray */
-    --input: 213 6% 80%; /* french_gray */
-    --ring: 265 100% 67%; /* medium_slate_blue */
+
+    --border: 216 8% 80%; /* french_gray */
+    --input: 216 8% 80%; /* french_gray */
+    --ring: 259 100% 67%; /* medium_slate_blue */
     --radius: 0.8rem;
   }
+
   .dark {
-    --background: 224 71% 10%;
-    --foreground: 34 50% 90%;
-    --card: 224 71% 10%;
-    --card-foreground: 34 50% 90%;
-    --popover: 224 71% 10%;
-    --popover-foreground: 34 50% 90%;
-    --primary: 34 50% 90%;
-    --primary-foreground: 224 71% 10%;
-    --secondary: 213 6% 70%;
-    --secondary-foreground: 34 50% 90%;
-    --muted: 224 71% 16%;
-    --muted-foreground: 213 6% 80%;
-    --accent: 265 100% 67%;
-    --accent-foreground: 34 50% 90%;
+    --background: 222 70% 16%; /* penn_blue */
+    --foreground: 43 58% 89%; /* parchment */
+
+    --card: 43 58% 89%; /* parchment */
+    --card-foreground: 222 70% 16%; /* penn_blue */
+
+    --popover: 222 70% 16%; /* penn_blue */
+    --popover-foreground: 43 58% 89%; /* parchment */
+
+    --primary: 259 100% 67%; /* medium_slate_blue */
+    --primary-foreground: 43 58% 89%; /* parchment */
+
+    --secondary: 216 8% 28%; /* french_gray */
+    --secondary-foreground: 43 58% 89%; /* parchment */
+
+    --muted: 216 8% 20%; /* french_gray */
+    --muted-foreground: 216 8% 85%; /* french_gray */
+
+    --accent: 259 100% 67%; /* medium_slate_blue */
+    --accent-foreground: 43 58% 89%; /* parchment */
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 224 71% 16%;
-    --input: 224 71% 16%;
-    --ring: 265 100% 67%;
+
+    --border: 216 8% 28%; /* french_gray */
+    --input: 216 8% 28%; /* french_gray */
+    --ring: 259 100% 67%; /* medium_slate_blue */
   }
 }
 

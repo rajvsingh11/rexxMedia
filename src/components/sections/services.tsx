@@ -43,25 +43,25 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-card" data-aos="slide-up">
+    <section id="services" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Our Core Services</div>
+          <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Our Core Services</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             What We Do Best
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-card-foreground/80">
             From influencer campaigns to full-scale OTT launches, Rexx Media combines storytelling with strategy to drive measurable results.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 bg-background">
+            <Card key={service.title} className="group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-accent/50 bg-background">
               <CardHeader className="flex flex-row items-center gap-4">
                 <div className="bg-primary/10 p-3 rounded-lg text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
                   <service.icon className="h-8 w-8" />
                 </div>
-                <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-xl text-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{service.description}</p>

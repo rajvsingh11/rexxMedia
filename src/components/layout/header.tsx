@@ -33,7 +33,7 @@ export default function Header() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled
-          ? "bg-primary/90 backdrop-blur-sm shadow-md text-primary-foreground"
+          ? "bg-card/90 backdrop-blur-sm shadow-md text-card-foreground"
           : "bg-transparent text-foreground"
       )}
     >
@@ -46,8 +46,8 @@ export default function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className={cn("text-sm font-medium transition-colors hover:text-accent",
-                isScrolled ? "text-primary-foreground/80 hover:text-primary-foreground" : "text-foreground/80 hover:text-primary"
+              className={cn("text-sm font-medium transition-colors",
+                isScrolled ? "text-card-foreground/80 hover:text-card-foreground" : "text-foreground/80 hover:text-primary"
               )}
             >
               {item.label}
@@ -65,7 +65,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-primary text-primary-foreground">
+            <SheetContent side="right" className="w-full max-w-xs bg-card text-card-foreground">
               <div className="flex h-full flex-col p-6">
                 <div className="mb-8 flex items-center justify-between">
                   <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
@@ -86,7 +86,7 @@ export default function Header() {
                     <Link
                       key={item.label}
                       href={item.href}
-                      className="text-lg font-medium text-primary-foreground/80 transition-colors hover:text-primary-foreground"
+                      className="text-lg font-medium text-card-foreground/80 transition-colors hover:text-card-foreground"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}

@@ -54,21 +54,21 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-card" data-aos="slide-up">
+    <section id="contact" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Contact Us</div>
+          <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Contact Us</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             Let's Launch Your Next Big Thing
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-card-foreground/80">
             Have a project in mind or just want to say hello? We'd love to hear from you. Let's do it the Rexx way.
           </p>
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
           <div className="bg-background p-8 rounded-lg">
-            <h3 className="font-headline text-2xl font-semibold mb-6">Send us a message</h3>
+            <h3 className="font-headline text-2xl font-semibold mb-6 text-foreground">Send us a message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -132,13 +132,13 @@ export default function Contact() {
           <div className="space-y-8">
             <div>
               <h3 className="font-headline text-2xl font-semibold mb-4">Get In Touch</h3>
-              <div className="space-y-3 text-muted-foreground">
+              <div className="space-y-3 text-card-foreground/80">
                   <p className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary" />
+                    <Phone className="h-5 w-5 text-accent" />
                     <span>+91 95616 96441 (Phone/WhatsApp)</span>
                   </p>
                   <p className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-primary" />
+                    <Mail className="h-5 w-5 text-accent" />
                     <span>himanshupandeycr7@gmail.com</span>
                   </p>
               </div>

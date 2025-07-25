@@ -16,14 +16,14 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background text-card-foreground border-t">
+    <footer className="bg-card text-card-foreground border-t">
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link href="#" className="mb-4 inline-block">
-              <Logo />
+              <Logo isScrolled={true} />
             </Link>
-            <p className="text-sm text-muted-foreground max-w-sm">
+            <p className="text-sm text-card-foreground/80 max-w-sm">
               We don’t just manage accounts — we launch trends. We combine storytelling with strategy to drive measurable results.
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                      <Link href={link.href} className="text-sm text-card-foreground/80 transition-colors hover:text-primary-foreground">
                         {link.label}
                       </Link>
                     </li>
@@ -44,13 +44,13 @@ export default function Footer() {
             ))}
              <div>
                 <h3 className="font-headline text-lg font-semibold mb-4">Contact</h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
+                <ul className="space-y-3 text-sm text-card-foreground/80">
                     <li className="flex items-center gap-2">
-                        <Phone className="h-4 w-4 text-primary" />
+                        <Phone className="h-4 w-4 text-accent" />
                         <span>+91 95616 96441</span>
                     </li>
                      <li className="flex items-center gap-2">
-                        <Mail className="h-4 w-4 text-primary" />
+                        <Mail className="h-4 w-4 text-accent" />
                         <span>himanshupandeycr7@gmail.com</span>
                     </li>
                 </ul>
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row items-center justify-between">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-card-foreground/80">
             &copy; {new Date().getFullYear()} Rexx Media. All Rights Reserved.
           </p>
           <div className="flex items-center gap-2 mt-4 sm:mt-0">

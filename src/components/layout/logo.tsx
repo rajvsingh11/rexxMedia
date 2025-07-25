@@ -4,12 +4,12 @@ const Logo = ({ className, isScrolled }: { className?: string, isScrolled?: bool
   <div
     className={cn(
       "font-headline text-3xl font-bold tracking-tight",
-      isScrolled ? 'text-primary-foreground' : 'text-primary',
+      isScrolled ? 'text-card-foreground' : 'text-foreground',
       className
     )}
   >
     Rexx
-    <span className={cn(isScrolled ? 'text-white/70' : 'text-foreground/90')}>
+    <span className={cn(isScrolled ? 'text-white/70' : 'text-foreground/70')}>
       Media
     </span>
   </div>

@@ -21,12 +21,12 @@ export default function About() {
               <div className="p-4 rounded-lg bg-card text-card-foreground">
                 <Target className="h-8 w-8 mx-auto text-accent mb-2"/>
                 <h4 className="font-semibold">Our Mission</h4>
-                <p className="text-sm text-muted-foreground">To launch trends.</p>
+                <p className="text-sm text-card-foreground/80">To launch trends.</p>
               </div>
               <div className="p-4 rounded-lg bg-card text-card-foreground">
                 <Award className="h-8 w-8 mx-auto text-accent mb-2"/>
                 <h4 className="font-semibold">Our Vision</h4>
-                <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
+                <p className="text-sm text-card-foreground/80">To be the top launch agency.</p>
               </div>
             </div>
           </div>

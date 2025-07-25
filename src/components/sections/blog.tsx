@@ -36,11 +36,11 @@ export default function Blog() {
     <section id="blog" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-background/10 px-3 py-1 text-sm font-medium text-background">Blog & Insights</div>
+          <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Blog & Insights</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             From Our Desk
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-card-foreground/80">
             Stay updated with the latest industry trends, expert insights, and company news from the PortfoliAI team.
           </p>
         </div>
@@ -64,15 +64,15 @@ export default function Blog() {
                         <Badge variant="secondary">{post.category}</Badge>
                         <time dateTime={post.date}>{post.date}</time>
                     </div>
-                    <h3 className="font-headline text-xl font-semibold mt-2 text-primary">
-                        <Link href="#" className="hover:text-accent transition-colors">{post.title}</Link>
+                    <h3 className="font-headline text-xl font-semibold mt-2 text-foreground">
+                        <Link href="#" className="hover:text-primary transition-colors">{post.title}</Link>
                     </h3>
                 </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-muted-foreground text-sm">{post.excerpt}</p>
               </CardContent>
               <CardFooter>
-                 <Link href="#" className="text-sm font-semibold text-accent inline-flex items-center group/link">
+                 <Link href="#" className="text-sm font-semibold text-primary inline-flex items-center group/link">
                     Read More <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                   </Link>
               </CardFooter>

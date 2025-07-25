@@ -28,7 +28,7 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="bg-card" data-aos="slide-up">
+    <section id="why-us" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -42,22 +42,22 @@ export default function WhyUs() {
                 />
             </div>
             <div className="space-y-6">
-                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Why Work With Us</div>
+                <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Why Work With Us</div>
                 <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
                     Your Partner in Digital Growth
                 </h2>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-card-foreground/80 text-lg">
                     Choosing the right agency is crucial. We're more than just a service provider; we're your partner in success, committed to bringing your vision to life.
                 </p>
                 <div className="space-y-4">
                     {reasons.map((reason) => (
                     <div key={reason.title} className="flex items-start gap-4">
-                        <div className="bg-primary/10 text-primary p-2 rounded-full mt-1">
+                        <div className="bg-accent/10 text-accent p-2 rounded-full mt-1">
                             <reason.icon className="h-5 w-5" />
                         </div>
                         <div>
                         <h4 className="font-semibold">{reason.title}</h4>
-                        <p className="text-sm text-muted-foreground">{reason.description}</p>
+                        <p className="text-sm text-card-foreground/80">{reason.description}</p>
                         </div>
                     </div>
                     ))}
