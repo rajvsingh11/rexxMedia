@@ -37,7 +37,7 @@ export default function ClientLogos() {
                   data-ai-hint={logo.hint}
                   width={180}
                   height={70}
-                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="object-contain filter invert hover:invert-0 transition-all duration-300 opacity-60 hover:opacity-100"
                 />
               </div>
             ))}
