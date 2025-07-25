@@ -3,7 +3,7 @@ import { Award, Target, Users } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="bg-background" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

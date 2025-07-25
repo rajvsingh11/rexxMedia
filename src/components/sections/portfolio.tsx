@@ -116,10 +116,10 @@ export default function Portfolio() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="portfolio" className="bg-background">
+    <section id="portfolio" className="bg-background" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Case Studies & Samples</div>
+          <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Our Work</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             Showcasing Our Results
           </h2>
