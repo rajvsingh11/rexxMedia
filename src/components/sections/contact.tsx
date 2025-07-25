@@ -54,7 +54,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-card" data-aos="fade-up">
+    <section id="contact" className="bg-card" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-secondary/10 px-3 py-1 text-sm font-medium text-secondary-foreground">Contact Us</div>

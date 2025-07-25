@@ -43,7 +43,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-card" data-aos="fade-up">
+    <section id="services" className="bg-card" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Our Core Services</div>

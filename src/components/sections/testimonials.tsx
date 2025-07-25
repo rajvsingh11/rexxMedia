@@ -37,7 +37,7 @@ const QuoteIcon = () => (
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-background" data-aos="fade-up">
+    <section id="testimonials" className="bg-background" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
            <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Client Love</div>
