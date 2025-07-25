@@ -10,10 +10,11 @@ export function useTypewriter(text: string, startDelay = 0, speed = 50): [string
     setDisplayText('');
     setIsDone(false);
     let timeoutId: NodeJS.Timeout;
+    let typingInterval: NodeJS.Timeout;
 
     const startTyping = () => {
       let i = 0;
-      const typingInterval = setInterval(() => {
+      typingInterval = setInterval(() => {
         if (i < text.length) {
           setDisplayText(prev => prev + text.charAt(i));
           i++;
@@ -32,6 +33,7 @@ export function useTypewriter(text: string, startDelay = 0, speed = 50): [string
 
     return () => {
       clearTimeout(timeoutId);
+      clearInterval(typingInterval);
     };
   }, [text, speed, startDelay]);
   
