@@ -33,7 +33,7 @@ export default function Header() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled
-          ? "bg-primary/80 backdrop-blur-sm shadow-md text-primary-foreground"
+          ? "bg-primary/90 backdrop-blur-sm shadow-md text-primary-foreground"
           : "bg-transparent text-foreground"
       )}
     >
@@ -53,7 +53,7 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Button asChild variant={isScrolled ? "outline" : "default"}>
+          <Button asChild variant={isScrolled ? "outline" : "default"} className={cn(isScrolled && "border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary")}>
             <Link href="#contact">Get a Quote</Link>
           </Button>
         </nav>
@@ -93,7 +93,7 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <Button asChild className="mt-8 w-full" variant="outline">
+                <Button asChild className="mt-8 w-full" variant="outline" >
                   <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Get a Quote</Link>
                 </Button>
               </div>

@@ -152,7 +152,7 @@ export default function Portfolio() {
             {filteredProjects.map((project, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full overflow-hidden group flex flex-col bg-card">
+                  <Card className="h-full overflow-hidden group flex flex-col bg-card text-card-foreground">
                     <div className="relative overflow-hidden">
                       <Image
                         src={project.image}
@@ -169,7 +169,7 @@ export default function Portfolio() {
                       <h3 className="font-headline text-xl font-semibold mb-2">{project.title}</h3>
                       <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.map(tag => <Badge key={tag} variant="outline">{tag}</Badge>)}
+                        {project.tags.map(tag => <Badge key={tag} variant="outline" className="border-card-foreground/50 text-card-foreground/80">{tag}</Badge>)}
                       </div>
                     </CardContent>
                   </Card>

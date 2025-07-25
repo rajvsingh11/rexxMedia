@@ -18,13 +18,13 @@ export default function About() {
              From influencer campaigns to full-scale OTT launches, our team has the expertise to make your next big thing a massive success.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center pt-4">
-              <div className="p-4 rounded-lg bg-card">
-                <Target className="h-8 w-8 mx-auto text-primary mb-2"/>
+              <div className="p-4 rounded-lg bg-card text-card-foreground">
+                <Target className="h-8 w-8 mx-auto text-accent mb-2"/>
                 <h4 className="font-semibold">Our Mission</h4>
                 <p className="text-sm text-muted-foreground">To launch trends.</p>
               </div>
-              <div className="p-4 rounded-lg bg-card">
-                <Award className="h-8 w-8 mx-auto text-primary mb-2"/>
+              <div className="p-4 rounded-lg bg-card text-card-foreground">
+                <Award className="h-8 w-8 mx-auto text-accent mb-2"/>
                 <h4 className="font-semibold">Our Vision</h4>
                 <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
               </div>

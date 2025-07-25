@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between bg-primary text-primary-foreground transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <Card key={testimonial.name} className="flex flex-col justify-between bg-card text-card-foreground transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <CardContent className="p-6 relative flex flex-col h-full">
                  <QuoteIcon />
                  <div className="flex mb-4">
@@ -58,12 +58,12 @@ export default function Testimonials() {
                         <Star
                         key={i}
                         className={`h-5 w-5 ${
-                            i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-primary-foreground/30'
+                            i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-card-foreground/30'
                         }`}
                         />
                     ))}
                 </div>
-                <p className="text-primary-foreground/90 mb-6 text-balance flex-grow">"{testimonial.quote}"</p>
+                <p className="text-card-foreground/90 mb-6 text-balance flex-grow">"{testimonial.quote}"</p>
                 <div className="flex items-center gap-4 mt-auto">
                   <Avatar>
                     <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint={testimonial.hint}/>
@@ -71,7 +71,7 @@ export default function Testimonials() {
                   </Avatar>
                   <div>
                     <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm text-primary-foreground/80">{testimonial.company}</p>
+                    <p className="text-sm text-card-foreground/80">{testimonial.company}</p>
                   </div>
                 </div>
               </CardContent>
