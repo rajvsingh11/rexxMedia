@@ -8,7 +8,7 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [line1, isLine1Typing] = useTypewriter("We Launch Trends,", 0);
+  const [line1, isLine1Typing] = useTypewriter("W e Launch Trends,", 0);
   const [startLine2, setStartLine2] = useState(false);
 
   useEffect(() => {
@@ -20,19 +20,19 @@ export default function Hero() {
     }
   }, [isLine1Typing]);
 
-  const [line2, isLine2Typing] = useTypewriter("Not just Campaigns.", startLine2 ? 0 : 1000000);
+  const [line2, isLine2Typing] = useTypewriter("N ot just Campaigns.", startLine2 ? 0 : 1000000);
 
 
   return (
     <section id="home" className="relative h-[90vh] min-h-[600px] max-h-[800px] w-full overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
-      <Image
-        src="https://placehold.co/1920x1080.png"
-        alt="Creative agency workspace"
-        data-ai-hint="digital marketing"
-        fill
-        className="object-cover"
-        priority
+      <video
+        src="https://videos.pexels.com/video-files/3254012/3254012-hd_1920_1080_25fps.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <div className="relative z-20 container mx-auto flex h-full items-center justify-center text-center px-4 md:px-6">
         <div className="flex flex-col items-center gap-6 max-w-3xl">
