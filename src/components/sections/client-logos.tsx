@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const logos = [
-  { name: "Amazon Prime Video India", src: "https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg", hint: "streaming service logo" },
-  { name: "Amazon MiniTV", src: "https://images.pexels.com/photos/7235472/pexels-photo-7235472.jpeg", hint: "tv logo" },
-  { name: "Jhankar Beats", src: "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg", hint: "music logo" },
-  { name: "1xBet", src: "https://images.pexels.com/photos/7772659/pexels-photo-7772659.jpeg", hint: "gaming logo" },
-  { name: "Play Win", src: "https://images.pexels.com/photos/66100/pexels-photo-66100.jpeg", hint: "betting logo" },
-  { name: "MG Motors", src: "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg", hint: "car logo" },
-  { name: "IPLWin", src: "https://images.pexels.com/photos/10599426/pexels-photo-10599426.jpeg", hint: "sports logo" },
+  { name: "Amazon Prime Video India", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Prime+Video&font=playfair-display" },
+  { name: "Amazon MiniTV", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=miniTV&font=playfair-display" },
+  { name: "Jhankar Beats", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Jhankar+Beats&font=playfair-display" },
+  { name: "1xBet", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=1xBet&font=playfair-display" },
+  { name: "Play Win", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Play+Win&font=playfair-display" },
+  { name: "MG Motors", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=MG+Motors&font=playfair-display" },
+  { name: "IPLWin", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=IPLWin&font=playfair-display" },
 ];
 
 const allLogos = [...logos, ...logos]; // Duplicate for seamless scroll
@@ -34,10 +34,9 @@ export default function ClientLogos() {
                 <Image
                   src={logo.src}
                   alt={logo.name}
-                  data-ai-hint={logo.hint}
                   width={180}
                   height={70}
-                  className="object-contain filter invert hover:invert-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="object-contain transition-all duration-300 opacity-60 hover:opacity-100"
                 />
               </div>
             ))}
