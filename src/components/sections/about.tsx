@@ -32,7 +32,7 @@ export default function About() {
           </div>
           <div className="w-full">
             <Image
-              src="https://placehold.co/600x500.png"
+              src="https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg"
               alt="Our team collaborating"
               data-ai-hint="marketing team meeting"
               width={600}
