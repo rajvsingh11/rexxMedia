@@ -33,7 +33,7 @@ export default function WhyUs() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
                  <Image
-                    src="https://placehold.co/600x700.png"
+                    src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg"
                     alt="Why choose Rexx Media"
                     data-ai-hint="marketing strategy session"
                     width={600}
