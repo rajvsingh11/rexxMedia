@@ -108,31 +108,31 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const logos = [
     {
         name: "Amazon Prime Video India",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Prime+Video&font=playfair-display"
+        src: "/Amazon-Prime-Video-Logo.png"
     },
     {
         name: "Amazon MiniTV",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=miniTV&font=playfair-display"
+        src: "/mini.jpg"
     },
     {
         name: "Jhankar Beats",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Jhankar+Beats&font=playfair-display"
+        src: "/jhankar.jpg"
     },
     {
         name: "1xBet",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=1xBet&font=playfair-display"
+        src: "/1xbetlogo.png"
     },
     {
         name: "Play Win",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Play+Win&font=playfair-display"
+        src: "/play win.jpg"
     },
     {
         name: "MG Motors",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=MG+Motors&font=playfair-display"
+        src: "/MG_Motor_2021_logo.png"
     },
     {
         name: "IPLWin",
-        src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=IPLWin&font=playfair-display"
+        src: "/ipl.png"
     }
 ];
 const allLogos = [
@@ -344,7 +344,7 @@ function About() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            src: "https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg",
+                            src: "/about.jpg",
                             alt: "Our team collaborating",
                             "data-ai-hint": "marketing team meeting",
                             width: 600,
@@ -795,7 +795,7 @@ function WhyUs() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            src: "https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg",
+                            src: "/why.jpg",
                             alt: "Why choose Rexx Media",
                             "data-ai-hint": "marketing strategy session",
                             width: 600,

@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const logos = [
-  { name: "Amazon Prime Video India", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Prime+Video&font=playfair-display" },
-  { name: "Amazon MiniTV", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=miniTV&font=playfair-display" },
-  { name: "Jhankar Beats", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Jhankar+Beats&font=playfair-display" },
-  { name: "1xBet", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=1xBet&font=playfair-display" },
-  { name: "Play Win", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=Play+Win&font=playfair-display" },
-  { name: "MG Motors", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=MG+Motors&font=playfair-display" },
-  { name: "IPLWin", src: "https://placehold.co/180x70/0d1b48/f4ebd0?text=IPLWin&font=playfair-display" },
+  { name: "Amazon Prime Video India", src: "/Amazon-Prime-Video-Logo.png" },
+  { name: "Amazon MiniTV", src: "/mini.jpg" },
+  { name: "Jhankar Beats", src: "/jhankar.jpg" },
+  { name: "1xBet", src: "/1xbetlogo.png" },
+  { name: "Play Win", src: "/play win.jpg" },
+  { name: "MG Motors", src: "/MG_Motor_2021_logo.png" },
+  { name: "IPLWin", src: "/ipl.png" },
 ];
 
 const allLogos = [...logos, ...logos]; // Duplicate for seamless scroll
