@@ -7,19 +7,11 @@ import * as z from "zod";
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 const formSchema = z.object({
@@ -52,7 +44,7 @@ export default function Contact() {
     <section id="contact" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Contact Us</div>
+           <div className="inline-block rounded-lg bg-background/10 px-3 py-1 text-sm font-medium text-background">Contact Us</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             Let's Launch Your Next Big Thing
           </h2>
@@ -62,7 +54,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-           <Card className="bg-background">
+           <Card className="bg-background text-foreground">
              <CardHeader>
                 <CardTitle className="font-headline text-2xl font-semibold">Send us a message</CardTitle>
              </CardHeader>

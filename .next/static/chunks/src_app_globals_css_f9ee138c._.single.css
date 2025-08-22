@@ -1293,6 +1293,10 @@ section {
   background-color: #0000;
 }
 
+.bg-background\/10 {
+  background-color: hsl(var(--background) / .1);
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1650,6 +1654,10 @@ section {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
+.text-background {
+  color: hsl(var(--background));
 }
 
 .underline-offset-4 {
