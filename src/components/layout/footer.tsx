@@ -10,7 +10,7 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { title: "Company", links: [{ label: "About Us", href: "#about"}, { label: "Services", href: "#services"}, { label: "Blog", href: "#blog"}, { label: "Case Studies", href: "#portfolio"}] },
+  { title: "Company", links: [{ label: "About Us", href: "#about"}, { label: "Services", href: "#services"}, { label: "Case Studies", href: "#portfolio"}] },
   { title: "Support", links: [{ label: "Contact Us", href: "#contact"}, { label: "FAQ", href: "#"}, { label: "Privacy Policy", href: "#"}] },
 ];
 

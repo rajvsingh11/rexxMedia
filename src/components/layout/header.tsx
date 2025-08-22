@@ -17,7 +17,6 @@ const navItems = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#portfolio", label: "Portfolio" },
-  { href: "#blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -38,7 +37,7 @@ export default function Header() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled
-          ? "bg-card/90 backdrop-blur-sm shadow-md text-card-foreground"
+          ? "bg-card/90 backdrop-blur-sm shadow-md"
           : "bg-transparent text-foreground"
       )}
     >
