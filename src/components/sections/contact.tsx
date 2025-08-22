@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,6 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -40,18 +42,10 @@ export default function Contact() {
     },
   });
 
+  // This onSubmit is not used when submitting to formspree via action/method attributes.
+  // Kept for potential future use if switching back to client-side handling.
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you would send this to a server action or API endpoint
     console.log(values);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. We'll get back to you shortly.",
-    });
-    form.reset();
   }
 
   return (
@@ -68,70 +62,34 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-           <Card className="bg-background text-foreground">
+           <Card className="bg-background">
              <CardHeader>
                 <CardTitle className="font-headline text-2xl font-semibold">Send us a message</CardTitle>
              </CardHeader>
              <CardContent>
-                <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Full Name</FormLabel>
-                        <FormControl>
-                            <Input placeholder="John Doe" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Email Address</FormLabel>
-                        <FormControl>
-                            <Input placeholder="you@example.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <FormField
-                    control={form.control}
-                    name="subject"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Subject</FormLabel>
-                        <FormControl>
-                            <Input placeholder="Launch Strategy Inquiry" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                        <FormItem>
-                        <FormLabel>Your Message</FormLabel>
-                        <FormControl>
-                            <Textarea placeholder="Tell us about your project..." {...field} className="min-h-[120px]" />
-                        </FormControl>
-                        <FormMessage />
-                        </FormItem>
-                    )}
-                    />
-                    <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-                    {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+                <form action="https://formspree.io/f/myzprebg" method="POST">
+                  <div className="space-y-6">
+                    <div>
+                      <Label htmlFor="name">Full Name</Label>
+                      <Input id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div>
+                      <Label htmlFor="email">Email Address</Label>
+                      <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div>
+                      <Label htmlFor="subject">Subject</Label>
+                      <Input id="subject" name="subject" placeholder="Launch Strategy Inquiry" required />
+                    </div>
+                    <div>
+                      <Label htmlFor="message">Your Message</Label>
+                      <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[120px]" required />
+                    </div>
+                    <Button type="submit" className="w-full">
+                      Send Message
                     </Button>
+                  </div>
                 </form>
-                </Form>
             </CardContent>
            </Card>
           <div className="space-y-8">
