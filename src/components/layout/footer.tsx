@@ -4,9 +4,9 @@ import Logo from "./logo";
 import { Button } from "../ui/button";
 
 const socialLinks = [
-  { icon: Twitter, href: "https://x.com/rexxmedia" },
-  { icon: Linkedin, href: "#" },
-  { icon: Instagram, href: "https://instagram.com/rexxmedia" },
+  { icon: Twitter, href: "https://x.com/@rexxmediahq" },
+  { icon: Linkedin, href: "" },
+  { icon: Instagram, href: "https://instagram.com/@rexxmediahq" },
 ];
 
 const footerLinks = [
@@ -51,7 +51,7 @@ export default function Footer() {
                     </li>
                      <li className="flex items-center gap-2">
                         <Mail className="h-4 w-4 text-accent" />
-                        <span>himanshupandeycr7@gmail.com</span>
+                        <span>rexxmediahq@gmail.com</span>
                     </li>
                 </ul>
             </div>
