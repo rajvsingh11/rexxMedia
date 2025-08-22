@@ -4,15 +4,14 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Label } from "../ui/label";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -44,7 +43,7 @@ export default function Contact() {
     <section id="contact" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-           <div className="inline-block rounded-lg bg-background/10 px-3 py-1 text-sm font-medium text-background">Contact Us</div>
+           <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Contact Us</div>
           <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
             Let's Launch Your Next Big Thing
           </h2>
@@ -56,25 +55,25 @@ export default function Contact() {
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
            <Card className="bg-background text-foreground">
              <CardHeader>
-                <CardTitle className="font-headline text-2xl font-semibold">Send us a message</CardTitle>
+                <CardTitle className="font-headline text-2xl font-semibold text-foreground">Send us a message</CardTitle>
              </CardHeader>
              <CardContent>
                 <form action="https://formspree.io/f/myzprebg" method="POST">
                   <div className="space-y-6">
                     <div>
-                      <Label htmlFor="name">Full Name</Label>
+                      <Label htmlFor="name" className="text-foreground">Full Name</Label>
                       <Input id="name" name="name" placeholder="John Doe" required />
                     </div>
                     <div>
-                      <Label htmlFor="email">Email Address</Label>
+                      <Label htmlFor="email" className="text-foreground">Email Address</Label>
                       <Input id="email" name="email" type="email" placeholder="you@example.com" required />
                     </div>
                     <div>
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label htmlFor="subject" className="text-foreground">Subject</Label>
                       <Input id="subject" name="subject" placeholder="Launch Strategy Inquiry" required />
                     </div>
                     <div>
-                      <Label htmlFor="message">Your Message</Label>
+                      <Label htmlFor="message" className="text-foreground">Your Message</Label>
                       <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[120px]" required />
                     </div>
                     <Button type="submit" className="w-full">
@@ -99,14 +98,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="aspect-video w-full overflow-hidden rounded-lg">
-                <Image
-                    src="https://placehold.co/600x450.png"
-                    alt="Map to our office"
-                    data-ai-hint="digital marketing agency"
-                    width={600}
-                    height={450}
-                    className="object-cover w-full h-full"
-                />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21587.420400344!2d73.13117585811953!3d19.240517728378403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755841983755!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full h-full"></iframe>
             </div>
           </div>
         </div>
