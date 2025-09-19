@@ -1217,6 +1217,10 @@ section {
   border-color: #0000;
 }
 
+.border-primary-foreground\/20 {
+  border-color: hsl(var(--primary-foreground) / .2);
+}
+
 .border-l-transparent {
   border-left-color: #0000;
 }
@@ -1287,6 +1291,10 @@ section {
 
 .bg-transparent {
   background-color: #0000;
+}
+
+.bg-primary\/95 {
+  background-color: hsl(var(--primary) / .95);
 }
 
 .bg-gradient-to-t {
@@ -1643,6 +1651,10 @@ section {
   color: hsl(var(--secondary-foreground));
 }
 
+.text-primary-foreground\/80 {
+  color: hsl(var(--primary-foreground) / .8);
+}
+
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -1909,6 +1921,14 @@ section {
   background-color: hsl(var(--secondary) / .8);
 }
 
+.hover\:bg-primary-foreground\/10:hover {
+  background-color: hsl(var(--primary-foreground) / .1);
+}
+
+.hover\:bg-transparent:hover {
+  background-color: #0000;
+}
+
 .hover\:text-accent-foreground:hover {
   color: hsl(var(--accent-foreground));
 }
@@ -1927,6 +1947,10 @@ section {
 
 .hover\:text-primary-foreground:hover {
   color: hsl(var(--primary-foreground));
+}
+
+.hover\:text-accent:hover {
+  color: hsl(var(--accent));
 }
 
 .hover\:underline:hover {
@@ -1949,6 +1973,10 @@ section {
 
 .focus\:bg-primary:focus {
   background-color: hsl(var(--primary));
+}
+
+.focus\:bg-transparent:focus {
+  background-color: #0000;
 }
 
 .focus\:text-accent-foreground:focus {
