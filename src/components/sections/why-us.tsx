@@ -42,8 +42,8 @@ export default function WhyUs() {
                 />
             </div>
             <div className="space-y-6">
-                <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Why Work With Us</div>
-                <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
+                <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Why Work With Us</div>
+                <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary">
                     Your Partner in Digital Growth
                 </h2>
                 <p className="text-card-foreground/80 text-lg">
@@ -52,11 +52,11 @@ export default function WhyUs() {
                 <div className="space-y-4">
                     {reasons.map((reason) => (
                     <div key={reason.title} className="flex items-start gap-4">
-                        <div className="bg-accent/10 text-accent p-2 rounded-full mt-1">
+                        <div className="bg-accent/20 text-accent p-2 rounded-full mt-1">
                             <reason.icon className="h-5 w-5" />
                         </div>
                         <div>
-                        <h4 className="font-semibold">{reason.title}</h4>
+                        <h4 className="font-semibold text-primary">{reason.title}</h4>
                         <p className="text-sm text-card-foreground/80">{reason.description}</p>
                         </div>
                     </div>

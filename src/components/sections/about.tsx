@@ -8,7 +8,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
              <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">About Us</div>
-            <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">
+            <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight text-primary">
               We Don't Just Manage Accounts — We Launch Trends
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -18,15 +18,15 @@ export default function About() {
              From influencer campaigns to full-scale OTT launches, our team has the expertise to make your next big thing a massive success.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center pt-4">
-              <div className="p-4 rounded-lg bg-card text-card-foreground">
+              <div className="p-4 rounded-lg bg-card text-card-foreground shadow-md">
                 <Target className="h-8 w-8 mx-auto text-accent mb-2"/>
-                <h4 className="font-semibold">Our Mission</h4>
-                <p className="text-sm text-card-foreground/80">To launch trends.</p>
+                <h4 className="font-semibold text-primary">Our Mission</h4>
+                <p className="text-sm text-muted-foreground">To launch trends.</p>
               </div>
-              <div className="p-4 rounded-lg bg-card text-card-foreground">
+              <div className="p-4 rounded-lg bg-card text-card-foreground shadow-md">
                 <Award className="h-8 w-8 mx-auto text-accent mb-2"/>
-                <h4 className="font-semibold">Our Vision</h4>
-                <p className="text-sm text-card-foreground/80">To be the top launch agency.</p>
+                <h4 className="font-semibold text-primary">Our Vision</h4>
+                <p className="text-sm text-muted-foreground">To be the top launch agency.</p>
               </div>
             </div>
           </div>

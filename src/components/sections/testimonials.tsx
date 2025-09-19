@@ -41,7 +41,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
            <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Client Love</div>
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4 text-primary">
             What Our Clients Say
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -50,7 +50,7 @@ export default function Testimonials() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between bg-card text-card-foreground transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <Card key={testimonial.name} className="flex flex-col justify-between bg-card text-card-foreground transition-all duration-300 hover:shadow-xl hover:-translate-y-2 shadow-md">
               <CardContent className="p-6 relative flex flex-col h-full">
                  <QuoteIcon />
                  <div className="flex mb-4">
@@ -58,7 +58,7 @@ export default function Testimonials() {
                         <Star
                         key={i}
                         className={`h-5 w-5 ${
-                            i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-card-foreground/30'
+                            i < testimonial.rating ? 'text-accent fill-accent' : 'text-muted-foreground/30'
                         }`}
                         />
                     ))}
@@ -70,8 +70,8 @@ export default function Testimonials() {
                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm text-card-foreground/80">{testimonial.company}</p>
+                    <h4 className="font-semibold text-primary">{testimonial.name}</h4>
+                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
                 </div>
               </CardContent>

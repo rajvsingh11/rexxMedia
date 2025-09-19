@@ -30,11 +30,11 @@ export default function Footer() {
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
             {footerLinks.map((section) => (
               <div key={section.title}>
-                <h3 className="font-headline text-lg font-semibold mb-4">{section.title}</h3>
+                <h3 className="font-headline text-lg font-semibold mb-4 text-primary">{section.title}</h3>
                 <ul className="space-y-3">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className="text-sm text-card-foreground/80 transition-colors hover:text-primary-foreground">
+                      <Link href={link.href} className="text-sm text-card-foreground/80 transition-colors hover:text-primary">
                         {link.label}
                       </Link>
                     </li>
@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
             ))}
              <div>
-                <h3 className="font-headline text-lg font-semibold mb-4">Contact</h3>
+                <h3 className="font-headline text-lg font-semibold mb-4 text-primary">Contact</h3>
                 <ul className="space-y-3 text-sm text-card-foreground/80">
                     <li className="flex items-center gap-2">
                         <Phone className="h-4 w-4 text-accent" />

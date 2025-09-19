@@ -4,64 +4,65 @@
 
 @layer base {
   :root {
-    --background: 43 58% 89%; /* parchment */
-    --foreground: 222 70% 16%; /* penn_blue */
+    --background: 40 100% 96%; /* light cream */
+    --foreground: 0 0% 13%; /* dark gray */
 
-    --card: 222 70% 16%; /* penn_blue */
-    --card-foreground: 43 58% 89%; /* parchment */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 0 0% 13%; /* dark gray */
 
-    --popover: 43 58% 89%; /* parchment */
-    --popover-foreground: 222 70% 16%; /* penn_blue */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 0 0% 13%; /* dark gray */
 
-    --primary: 259 100% 67%; /* medium_slate_blue */
-    --primary-foreground: 43 58% 89%; /* parchment */
+    --primary: 278 70% 42%; /* deep purple */
+    --primary-foreground: 0 0% 100%; /* white */
 
-    --secondary: 216 8% 72%; /* french_gray */
-    --secondary-foreground: 222 70% 16%; /* penn_blue */
+    --secondary: 40 100% 90%; /* lighter cream for secondary elements */
+    --secondary-foreground: 278 70% 42%; /* deep purple */
 
-    --muted: 216 8% 85%; /* french_gray */
-    --muted-foreground: 222 70% 25%; /* penn_blue */
+    --muted: 0 0% 90%; /* light gray for muted text */
+    --muted-foreground: 0 0% 40%; /* medium gray */
 
-    --accent: 259 100% 67%; /* medium_slate_blue */
-    --accent-foreground: 43 58% 89%; /* parchment */
+    --accent: 45 100% 65%; /* golden yellow */
+    --accent-foreground: 278 70% 42%; /* deep purple */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 216 8% 80%; /* french_gray */
-    --input: 216 8% 80%; /* french_gray */
-    --ring: 259 100% 67%; /* medium_slate_blue */
+    --border: 0 0% 85%; /* light gray border */
+    --input: 0 0% 95%; /* very light gray for input */
+    --ring: 278 70% 42%; /* deep purple */
     --radius: 0.8rem;
   }
 
   .dark {
-    --background: 222 70% 16%; /* penn_blue */
-    --foreground: 43 58% 89%; /* parchment */
+    /* Keeping a dark theme definition for completeness, but adjusting it to be more of a "purple" mode */
+    --background: 278 70% 10%; /* very dark purple */
+    --foreground: 40 100% 96%; /* light cream */
 
-    --card: 43 58% 89%; /* parchment */
-    --card-foreground: 222 70% 16%; /* penn_blue */
+    --card: 278 70% 15%; /* dark purple */
+    --card-foreground: 40 100% 96%; /* light cream */
 
-    --popover: 222 70% 16%; /* penn_blue */
-    --popover-foreground: 43 58% 89%; /* parchment */
+    --popover: 278 70% 10%; /* very dark purple */
+    --popover-foreground: 40 100% 96%; /* light cream */
 
-    --primary: 259 100% 67%; /* medium_slate_blue */
-    --primary-foreground: 43 58% 89%; /* parchment */
+    --primary: 278 80% 65%; /* brighter purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 216 8% 28%; /* french_gray */
-    --secondary-foreground: 43 58% 89%; /* parchment */
+    --secondary: 278 70% 20%;
+    --secondary-foreground: 40 100% 96%;
 
-    --muted: 216 8% 20%; /* french_gray */
-    --muted-foreground: 216 8% 85%; /* french_gray */
+    --muted: 278 70% 25%;
+    --muted-foreground: 40 100% 85%;
 
-    --accent: 259 100% 67%; /* medium_slate_blue */
-    --accent-foreground: 43 58% 89%; /* parchment */
+    --accent: 45 100% 65%; /* golden yellow */
+    --accent-foreground: 278 70% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 216 8% 28%; /* french_gray */
-    --input: 216 8% 28%; /* french_gray */
-    --ring: 259 100% 67%; /* medium_slate_blue */
+    --border: 278 70% 25%;
+    --input: 278 70% 20%;
+    --ring: 278 80% 65%;
   }
 }
 

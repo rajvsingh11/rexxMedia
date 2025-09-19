@@ -43,8 +43,8 @@ export default function Contact() {
     <section id="contact" className="bg-card text-card-foreground" data-aos="slide-up">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
-           <div className="inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">Contact Us</div>
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
+           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-medium text-primary">Contact Us</div>
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4 text-primary">
             Let's Launch Your Next Big Thing
           </h2>
           <p className="mt-4 text-lg text-card-foreground/80">
@@ -53,9 +53,9 @@ export default function Contact() {
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-           <Card className="bg-background text-foreground">
+           <Card className="bg-background text-foreground shadow-md">
              <CardHeader>
-                <CardTitle className="font-headline text-2xl font-semibold text-foreground">Send us a message</CardTitle>
+                <CardTitle className="font-headline text-2xl font-semibold text-primary">Send us a message</CardTitle>
              </CardHeader>
              <CardContent>
                 <form action="https://formspree.io/f/myzprebg" method="POST">
@@ -85,7 +85,7 @@ export default function Contact() {
            </Card>
           <div className="space-y-8">
             <div>
-              <h3 className="font-headline text-2xl font-semibold mb-4">Get In Touch</h3>
+              <h3 className="font-headline text-2xl font-semibold mb-4 text-primary">Get In Touch</h3>
               <div className="space-y-3 text-card-foreground/80">
                   <p className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-accent" />

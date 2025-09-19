@@ -120,7 +120,7 @@ export default function Portfolio() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-block rounded-lg bg-secondary px-4 py-2 text-base font-medium text-secondary-foreground">Our Work</div>
-          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4">
+          <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight mt-4 text-primary">
             Showcasing Our Results
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -152,7 +152,7 @@ export default function Portfolio() {
             {filteredProjects.map((project, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full overflow-hidden group flex flex-col bg-card text-card-foreground">
+                  <Card className="h-full overflow-hidden group flex flex-col bg-card text-card-foreground shadow-md">
                     <div className="relative overflow-hidden">
                       <Image
                         src={project.image}
@@ -166,10 +166,10 @@ export default function Portfolio() {
                        <Badge variant="secondary" className="absolute top-4 right-4">{project.category}</Badge>
                     </div>
                     <CardContent className="p-6 flex-grow flex flex-col">
-                      <h3 className="font-headline text-xl font-semibold mb-2">{project.title}</h3>
-                      <p className="text-card-foreground/80 text-sm mb-4 flex-grow">{project.description}</p>
+                      <h3 className="font-headline text-xl font-semibold mb-2 text-primary">{project.title}</h3>
+                      <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.map(tag => <Badge key={tag} variant="default" className="bg-primary text-primary-foreground">{tag}</Badge>)}
+                        {project.tags.map(tag => <Badge key={tag} variant="default">{tag}</Badge>)}
                       </div>
                     </CardContent>
                   </Card>
