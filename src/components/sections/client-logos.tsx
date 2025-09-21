@@ -4,11 +4,8 @@ const logos = [
   { name: "Amazon Prime Video India", src: "/Amazon-Prime-Video-Logo.png" },
   { name: "Amazon MiniTV", src: "/mini.jpg" },
   { name: "Jhankar Beats", src: "/jhankar.jpg" },
-  { name: "1xBet", src: "/1xbetlogo.png" },
-  { name: "Play Win", src: "/play win.jpg" },
   { name: "MG Motors", src: "/MG_Motor_2021_logo.png" },
   { name: "T series", src: "/tseries.jpg" },
-  { name: "IPLWin", src: "/ipl.png" },
   { name: "B4U", src: "/b4u.jpg" },
 ];
 
@@ -31,14 +28,14 @@ export default function ClientLogos() {
             {allLogos.map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-64 h-24 flex items-center justify-center mx-6"
+                className="flex-shrink-0 w-64 h-30 flex items-center justify-center mx-6"
               >
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   width={180}
-                  height={70}
-                  className="object-contain transition-all duration-300 opacity-60 hover:opacity-100"
+                  height={95}
+                  className="object-contain transition-all duration-300 opacity-80 hover:opacity-100"
                 />
               </div>
             ))}
