@@ -119,24 +119,12 @@ const logos = [
         src: "/jhankar.jpg"
     },
     {
-        name: "1xBet",
-        src: "/1xbetlogo.png"
-    },
-    {
-        name: "Play Win",
-        src: "/play win.jpg"
-    },
-    {
         name: "MG Motors",
         src: "/MG_Motor_2021_logo.png"
     },
     {
         name: "T series",
         src: "/tseries.jpg"
-    },
-    {
-        name: "IPLWin",
-        src: "/ipl.png"
     },
     {
         name: "B4U",
@@ -159,7 +147,7 @@ function ClientLogos() {
                     children: "Trusted by leading OTT, music, automotive, and gaming brands"
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/client-logos.tsx",
-                    lineNumber: 21,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -170,42 +158,42 @@ function ClientLogos() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex w-max animate-scroll",
                         children: allLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex-shrink-0 w-64 h-24 flex items-center justify-center mx-6",
+                                className: "flex-shrink-0 w-64 h-30 flex items-center justify-center mx-6",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                     src: logo.src,
                                     alt: logo.name,
                                     width: 180,
-                                    height: 70,
-                                    className: "object-contain transition-all duration-300 opacity-60 hover:opacity-100"
+                                    height: 95,
+                                    className: "object-contain transition-all duration-300 opacity-80 hover:opacity-100"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/client-logos.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 33,
                                     columnNumber: 17
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/components/sections/client-logos.tsx",
-                                lineNumber: 32,
+                                lineNumber: 29,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/client-logos.tsx",
-                        lineNumber: 30,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/client-logos.tsx",
-                    lineNumber: 24,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/sections/client-logos.tsx",
-            lineNumber: 20,
+            lineNumber: 17,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/sections/client-logos.tsx",
-        lineNumber: 19,
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }

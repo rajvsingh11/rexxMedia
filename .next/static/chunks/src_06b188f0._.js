@@ -662,7 +662,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Hero() {
     _s();
-    const [line1, isLine1Typing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$typewriter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTypewriter"])("We Launch Trends,", 0);
+    const [line1, isLine1Typing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$typewriter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTypewriter"])("W e Launch Trends,", 0);
     const [startLine2, setStartLine2] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Hero.useEffect": ()=>{
@@ -680,7 +680,7 @@ function Hero() {
     }["Hero.useEffect"], [
         isLine1Typing
     ]);
-    const [line2, isLine2Typing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$typewriter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTypewriter"])("Not just Campaigns.", startLine2 ? 0 : 1000000);
+    const [line2, isLine2Typing] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$use$2d$typewriter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTypewriter"])("N ot just Campaigns.", startLine2 ? 0 : 1000000);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "home",
         className: "relative h-[90vh] min-h-[600px] max-h-[800px] w-full overflow-hidden",

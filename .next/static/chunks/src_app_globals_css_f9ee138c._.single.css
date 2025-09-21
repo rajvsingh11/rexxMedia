@@ -715,6 +715,10 @@ section {
   height: 1px;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -1678,6 +1682,10 @@ section {
 
 .opacity-90 {
   opacity: .9;
+}
+
+.opacity-80 {
+  opacity: .8;
 }
 
 .shadow-lg {
