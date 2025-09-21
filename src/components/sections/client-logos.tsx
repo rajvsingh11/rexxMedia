@@ -38,7 +38,7 @@ export default function ClientLogos() {
                   alt={logo.name}
                   width={180}
                   height={70}
-                  className="object-contain transition-all duration-300 opacity-60 hover:opacity-100 invert"
+                  className="object-contain transition-all duration-300 opacity-60 hover:opacity-100"
                 />
               </div>
             ))}

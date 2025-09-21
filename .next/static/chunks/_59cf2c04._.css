@@ -1209,16 +1209,16 @@ section {
   border-color: hsl(var(--primary));
 }
 
+.border-primary-foreground\/20 {
+  border-color: hsl(var(--primary-foreground) / .2);
+}
+
 .border-primary\/30 {
   border-color: hsl(var(--primary) / .3);
 }
 
 .border-transparent {
   border-color: #0000;
-}
-
-.border-primary-foreground\/20 {
-  border-color: hsl(var(--primary-foreground) / .2);
 }
 
 .border-l-transparent {
@@ -1257,10 +1257,6 @@ section {
   background-color: hsl(var(--card));
 }
 
-.bg-card\/95 {
-  background-color: hsl(var(--card) / .95);
-}
-
 .bg-destructive {
   background-color: hsl(var(--destructive));
 }
@@ -1285,16 +1281,16 @@ section {
   background-color: hsl(var(--primary) / .1);
 }
 
+.bg-primary\/95 {
+  background-color: hsl(var(--primary) / .95);
+}
+
 .bg-secondary {
   background-color: hsl(var(--secondary));
 }
 
 .bg-transparent {
   background-color: #0000;
-}
-
-.bg-primary\/95 {
-  background-color: hsl(var(--primary) / .95);
 }
 
 .bg-gradient-to-t {
@@ -1643,16 +1639,16 @@ section {
   color: hsl(var(--primary-foreground));
 }
 
+.text-primary-foreground\/80 {
+  color: hsl(var(--primary-foreground) / .8);
+}
+
 .text-primary\/10 {
   color: hsl(var(--primary) / .1);
 }
 
 .text-secondary-foreground {
   color: hsl(var(--secondary-foreground));
-}
-
-.text-primary-foreground\/80 {
-  color: hsl(var(--primary-foreground) / .8);
 }
 
 .underline-offset-4 {
@@ -1885,10 +1881,6 @@ section {
   background-color: hsl(var(--accent));
 }
 
-.hover\:bg-background\/20:hover {
-  background-color: hsl(var(--background) / .2);
-}
-
 .hover\:bg-destructive\/80:hover {
   background-color: hsl(var(--destructive) / .8);
 }
@@ -1903,6 +1895,10 @@ section {
 
 .hover\:bg-primary:hover {
   background-color: hsl(var(--primary));
+}
+
+.hover\:bg-primary-foreground\/10:hover {
+  background-color: hsl(var(--primary-foreground) / .1);
 }
 
 .hover\:bg-primary\/80:hover {
@@ -1921,12 +1917,12 @@ section {
   background-color: hsl(var(--secondary) / .8);
 }
 
-.hover\:bg-primary-foreground\/10:hover {
-  background-color: hsl(var(--primary-foreground) / .1);
-}
-
 .hover\:bg-transparent:hover {
   background-color: #0000;
+}
+
+.hover\:text-accent:hover {
+  color: hsl(var(--accent));
 }
 
 .hover\:text-accent-foreground:hover {
@@ -1947,10 +1943,6 @@ section {
 
 .hover\:text-primary-foreground:hover {
   color: hsl(var(--primary-foreground));
-}
-
-.hover\:text-accent:hover {
-  color: hsl(var(--accent));
 }
 
 .hover\:underline:hover {
