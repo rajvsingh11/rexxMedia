@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Film, Star, DollarSign, Search, Video } from "lucide-react";
+import { Users, Smile, Film, ShieldCheck, Star, Search, Rocket, Bot, Video } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 type Service = {
@@ -15,24 +15,39 @@ const services: Service[] = [
     description: "We don’t just manage accounts — we build communities and launch trends that drive engagement.",
   },
   {
+    icon: Smile,
+    title: "Meme Marketing",
+    description: "Leveraging internet culture to create viral, shareable content that resonates with your audience.",
+  },
+  {
     icon: Film,
     title: "Content Creation",
     description: "Creating high-impact Reels, Carousels, and Shorts that capture attention and tell your story.",
   },
   {
-    icon: Star,
-    title: "Influencer Campaigns",
-    description: "Connecting your brand with the right influencers to create authentic, high-performing campaigns.",
+    icon: ShieldCheck,
+    title: "Online Reputation Management",
+    description: "Monitoring and managing your brand's online presence to ensure a positive public image.",
   },
   {
-    icon: DollarSign,
-    title: "Paid Advertising",
-    description: "Data-driven ad campaigns on Meta, Google, and YouTube to maximize your reach and ROI.",
+    icon: Star,
+    title: "Celebrity Management & PR",
+    description: "Connecting your brand with celebrities for endorsements and managing public relations for maximum impact.",
   },
   {
     icon: Search,
-    title: "SEO & YouTube Optimization",
+    title: "SEO (Search Engine Optimization)",
     description: "Boosting your visibility on search engines and YouTube to attract organic, high-intent audiences.",
+  },
+  {
+    icon: Rocket,
+    title: "UGC Campaigns & Challenges",
+    description: "Igniting user-generated content through creative campaigns and challenges that build brand loyalty.",
+  },
+  {
+    icon: Bot,
+    title: "Brand Strategy & Consulting",
+    description: "Crafting long-term brand strategies and providing expert consulting to navigate the digital landscape.",
   },
   {
     icon: Video,
