@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { Linkedin, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
 import Logo from "./logo";
 import { Button } from "../ui/button";
 
 const socialLinks = [
-  { icon: Twitter, href: "https://x.com/@rexxmediahq" },
-  { icon: Linkedin, href: "" },
-  { icon: Instagram, href: "https://instagram.com/@rexxmediahq" },
+  { icon: Twitter, href: "https://x.com/rexxmediahq" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/rexxmediahq" },
+  { icon: Instagram, href: "https://www.instagram.com/rexxmediahq/" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61581146584163" },
 ];
 
 const footerLinks = [
